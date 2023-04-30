@@ -1,0 +1,9 @@
+#pragma once
+
+#include <QtCore/qglobal.h>
+
+#if defined(HD_JSON_CYCLONEDX_WRITER_PLUGIN_LIBRARY)
+#  define HD_JSON_CYCLONEDX_WRITER_PLUGIN_EXPORT Q_DECL_EXPORT
+#else
+#  define HD_JSON_CYCLONEDX_WRITER_PLUGIN_EXPORT Q_DECL_IMPORT
+#endif
